@@ -1,0 +1,48 @@
+class {}
+<div>
+    Example 1 - only shows last value
+
+    <container list=[1,2,3,4]>
+        <card>
+            <div>
+                <div>value: ${item}</div>
+            </div>
+        </card>
+    </container>
+
+    <br/>
+
+    Example 2 - shows no value if key is added to first div inside card
+
+    <container list=[1,2,3,4]>
+        <card>
+            <div key=item>
+                <div>value: ${item}</div>
+            </div>
+        </card>
+    </container>
+
+    <br/>
+
+    Example 3 - shows all values if unique key is added to second div inside card
+
+    <container list=[1,2,3,4]>
+        <card>
+            <div>
+                <div key=item>value: ${item}</div>
+            </div>
+        </card>
+    </container>
+
+    <br/>
+
+    Example 4 - shows all values if no nested HTML inside card
+
+    <container list=[1,2,3,4]>
+        <card>
+            <div>
+                value: ${item}
+            </div>
+        </card>
+    </container>
+</div>
