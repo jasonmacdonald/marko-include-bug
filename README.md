@@ -4,3 +4,5 @@ When including nested `<include>` in components you get strange results if the i
 
 1. Running the `server` script produces the same result for all examples
 2. Running the `webpack` build and loading `index.html` in the browser you get varying results for each example.
+
+It appears to be an issues with VDOM and how it handles closing tags, but I'm not entirely sure.
